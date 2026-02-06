@@ -1,0 +1,23 @@
+{
+  "mappings": {
+    "properties": {
+      "trip_id": { "type": "keyword" },
+      "day_number": { "type": "integer" },
+      "date": { "type": "date" },
+      "activities": {
+        "type": "nested",
+        "properties": {
+          "type": { "type": "keyword" },
+          "name": { "type": "text", "fields": { "keyword": { "type": "keyword" } } },
+          "location": { "type": "keyword" },
+          "time_window": { "type": "keyword" },
+          "notes": { "type": "text" },
+          "estimated_cost": { "type": "float" }
+        }
+      },
+      "notes": { "type": "text" },
+      "created_at": { "type": "date" },
+      "updated_at": { "type": "date" }
+    }
+  }
+}

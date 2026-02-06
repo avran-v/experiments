@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "properties": {
+      "trip_id": { "type": "keyword" },
+      "family_id": { "type": "keyword" },
+      "status": { "type": "keyword" },
+      "dates": {
+        "properties": {
+          "start_date": { "type": "date" },
+          "end_date": { "type": "date" }
+        }
+      },
+      "destination_candidates": {
+        "type": "nested",
+        "properties": {
+          "name": { "type": "keyword" },
+          "score": { "type": "float" },
+          "rationale": { "type": "text" }
+        }
+      },
+      "final_destination": { "type": "keyword" },
+      "budget_estimate": { "type": "float" },
+      "constraints": { "type": "keyword" },
+      "created_at": { "type": "date" },
+      "updated_at": { "type": "date" }
+    }
+  }
+}

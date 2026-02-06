@@ -1,0 +1,36 @@
+{"index":{"_index":"family_profiles","_id":"fam_001"}}
+{"family_id":"fam_001","members":["mem_parent_01","mem_teen_01","mem_child_01","mem_grand_01"],"household_metadata":{"home_location":"San Jose, CA","typical_budget_range":"mid","school_calendar":"US-CA"},"tags":["summer_travel","beach"],"created_at":"2026-02-01","updated_at":"2026-02-05"}
+{"index":{"_index":"member_profiles","_id":"mem_parent_01"}}
+{"member_id":"mem_parent_01","family_id":"fam_001","role":"parent","age_bracket":"35-44","accessibility_needs":"none","communication_style":"concise","notes":"Prefers balanced days with a mix of activity and rest.","created_at":"2026-02-01","updated_at":"2026-02-05"}
+{"index":{"_index":"member_profiles","_id":"mem_teen_01"}}
+{"member_id":"mem_teen_01","family_id":"fam_001","role":"teen","age_bracket":"13-17","accessibility_needs":"none","communication_style":"casual","notes":"Avoids early mornings, enjoys nightlife and adventure.","created_at":"2026-02-01","updated_at":"2026-02-05"}
+{"index":{"_index":"member_profiles","_id":"mem_child_01"}}
+{"member_id":"mem_child_01","family_id":"fam_001","role":"child","age_bracket":"6-9","accessibility_needs":"none","communication_style":"simple","notes":"Likes animals and water activities.","created_at":"2026-02-01","updated_at":"2026-02-05"}
+{"index":{"_index":"member_profiles","_id":"mem_grand_01"}}
+{"member_id":"mem_grand_01","family_id":"fam_001","role":"grandparent","age_bracket":"65-74","accessibility_needs":"mobility","communication_style":"detailed","notes":"Needs accessible walking, prefers quiet evenings.","created_at":"2026-02-01","updated_at":"2026-02-05"}
+{"index":{"_index":"member_preferences","_id":"pref_parent_budget"}}
+{"preference_id":"pref_parent_budget","member_id":"mem_parent_01","family_id":"fam_001","preference_type":"budget","value":"mid","value_text":"Mid-range overall budget.","priority":5,"source":"explicit","confidence":0.95,"constraints":["avoid_luxury"],"last_updated":"2026-02-05"}
+{"index":{"_index":"member_preferences","_id":"pref_parent_pace"}}
+{"preference_id":"pref_parent_pace","member_id":"mem_parent_01","family_id":"fam_001","preference_type":"pace","value":"balanced","value_text":"Mix of activity and downtime.","priority":4,"source":"explicit","confidence":0.9,"constraints":[],"last_updated":"2026-02-05"}
+{"index":{"_index":"member_preferences","_id":"pref_teen_nightlife"}}
+{"preference_id":"pref_teen_nightlife","member_id":"mem_teen_01","family_id":"fam_001","preference_type":"activities","value":"nightlife","value_text":"Wants nightlife options and late starts.","priority":4,"source":"explicit","confidence":0.9,"constraints":["no_early_mornings"],"last_updated":"2026-02-05"}
+{"index":{"_index":"member_preferences","_id":"pref_teen_adventure"}}
+{"preference_id":"pref_teen_adventure","member_id":"mem_teen_01","family_id":"fam_001","preference_type":"activities","value":"adventure","value_text":"Likes thrill rides and kayaking.","priority":4,"source":"explicit","confidence":0.85,"constraints":[],"last_updated":"2026-02-05"}
+{"index":{"_index":"member_preferences","_id":"pref_child_animals"}}
+{"preference_id":"pref_child_animals","member_id":"mem_child_01","family_id":"fam_001","preference_type":"activities","value":"animals","value_text":"Wants a zoo or aquarium day.","priority":5,"source":"explicit","confidence":0.95,"constraints":[],"last_updated":"2026-02-05"}
+{"index":{"_index":"member_preferences","_id":"pref_child_water"}}
+{"preference_id":"pref_child_water","member_id":"mem_child_01","family_id":"fam_001","preference_type":"activities","value":"water_park","value_text":"Wants a water park day.","priority":5,"source":"explicit","confidence":0.95,"constraints":[],"last_updated":"2026-02-05"}
+{"index":{"_index":"member_preferences","_id":"pref_grand_access"}}
+{"preference_id":"pref_grand_access","member_id":"mem_grand_01","family_id":"fam_001","preference_type":"accessibility","value":"short_walks","value_text":"Avoid long walks and steep terrain.","priority":5,"source":"explicit","confidence":0.95,"constraints":["accessible_only"],"last_updated":"2026-02-05"}
+{"index":{"_index":"member_preferences","_id":"pref_grand_evening"}}
+{"preference_id":"pref_grand_evening","member_id":"mem_grand_01","family_id":"fam_001","preference_type":"pace","value":"quiet_evenings","value_text":"Prefers quiet evenings and early rest.","priority":4,"source":"explicit","confidence":0.9,"constraints":[],"last_updated":"2026-02-05"}
+{"index":{"_index":"trip_plans","_id":"trip_2026_07_sd"}}
+{"trip_id":"trip_2026_07_sd","family_id":"fam_001","status":"draft","dates":{"start_date":"2026-07-20","end_date":"2026-07-24"},"destination_candidates":[{"name":"San Diego, CA","score":0.82,"rationale":"Beach, zoo, water park, accessible attractions."},{"name":"Santa Cruz, CA","score":0.67,"rationale":"Beach and boardwalk, fewer accessible options."}],"final_destination":"San Diego, CA","budget_estimate":3200.0,"constraints":["accessible_only","no_early_mornings"],"created_at":"2026-02-05","updated_at":"2026-02-05"}
+{"index":{"_index":"trip_itineraries","_id":"trip_2026_07_sd_day1"}}
+{"trip_id":"trip_2026_07_sd","day_number":1,"date":"2026-07-20","activities":[{"type":"arrival","name":"Hotel check-in","location":"Mission Bay","time_window":"15:00-16:00","notes":"Request accessible room near elevator.","estimated_cost":0.0},{"type":"activity","name":"Sunset harbor cruise","location":"San Diego Bay","time_window":"18:00-20:00","notes":"Low walking, great for grandparents.","estimated_cost":160.0}],"notes":"Keep it light after travel.","created_at":"2026-02-05","updated_at":"2026-02-05"}
+{"index":{"_index":"trip_itineraries","_id":"trip_2026_07_sd_day2"}}
+{"trip_id":"trip_2026_07_sd","day_number":2,"date":"2026-07-21","activities":[{"type":"activity","name":"San Diego Zoo","location":"Balboa Park","time_window":"10:00-14:00","notes":"Rent wheelchair if needed.","estimated_cost":220.0},{"type":"meal","name":"Gaslamp District dinner","location":"Gaslamp Quarter","time_window":"18:30-20:00","notes":"Teen-friendly, reserve early.","estimated_cost":180.0}],"notes":"Balance animals + nightlife.","created_at":"2026-02-05","updated_at":"2026-02-05"}
+{"index":{"_index":"agent_memory","_id":"memlog_001"}}
+{"memory_id":"memlog_001","agent_id":"agent_orchestrator","family_id":"fam_001","memory_type":"decision","summary":"Selected San Diego for accessible attractions and balanced activities.","evidence_links":["pref_parent_budget","pref_child_animals","pref_grand_access"],"related_trip_id":"trip_2026_07_sd","created_at":"2026-02-05"}
+{"index":{"_index":"agent_memory","_id":"memlog_002"}}
+{"memory_id":"memlog_002","agent_id":"agent_teen","family_id":"fam_001","memory_type":"preference","summary":"Teen prefers late starts and nightlife options.","evidence_links":["pref_teen_nightlife"],"related_trip_id":"trip_2026_07_sd","created_at":"2026-02-05"}

@@ -1,0 +1,15 @@
+{
+  "mappings": {
+    "properties": {
+      "member_id": { "type": "keyword" },
+      "family_id": { "type": "keyword" },
+      "role": { "type": "keyword" },
+      "age_bracket": { "type": "keyword" },
+      "accessibility_needs": { "type": "keyword" },
+      "communication_style": { "type": "keyword" },
+      "notes": { "type": "text" },
+      "created_at": { "type": "date" },
+      "updated_at": { "type": "date" }
+    }
+  }
+}

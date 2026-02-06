@@ -1,0 +1,350 @@
+{
+  "run_id": "20260206T231259Z",
+  "kibana_url": "https://my-elasticsearch-project-f8df73.kb.us-central1.gcp.elastic.cloud",
+  "agents": [
+    "agent-parent",
+    "agent-teen",
+    "agent-child",
+    "agent-grandparent",
+    "family-orchestrator"
+  ],
+  "member_prompt": "Please share your top 3 activity preferences and any hard constraints for a 5-day July trip.",
+  "member_responses": [
+    {
+      "agent_id": "agent-parent",
+      "response": {
+        "conversation_id": "f921a525-0b3d-48b6-ba89-280ce3b54696",
+        "round_id": "476986fe-0006-4b4d-951b-cb5465b30161",
+        "status": "completed",
+        "steps": [
+          {
+            "type": "reasoning",
+            "reasoning": "I need to search for information about activity preferences and constraints for a family trip in July. This will help me understand what options are available and what the parent's preferences might be."
+          },
+          {
+            "type": "tool_call",
+            "tool_id": "platform.core.search",
+            "params": {
+              "query": "family vacation activities July preferences budget constraints"
+            },
+            "tool_call_id": "tooluse_J5rnDHe2piqO3OBn9GYsdU",
+            "progression": [
+              {
+                "message": "Identifying the most relevant data source"
+              }
+            ],
+            "results": [
+              {
+                "type": "error",
+                "data": {
+                  "message": "Could not figure out which index to use"
+                },
+                "tool_result_id": "501Xgd"
+              }
+            ]
+          }
+        ],
+        "started_at": "2026-02-06T23:12:59.928Z",
+        "time_to_first_token": 6151,
+        "time_to_last_token": 8599,
+        "model_usage": {
+          "connector_id": "Anthropic-Claude-Sonnet-3-7",
+          "llm_calls": 3,
+          "input_tokens": 8329,
+          "output_tokens": 317,
+          "model": "rainbow-sprinkles"
+        },
+        "response": {
+          "message": "For our 5-day July trip, here are my top activity preferences:\n\n1. Beach or water activities - swimming, building sandcastles, or a boat tour (preferably in the morning when it's not too hot)\n\n2. One or two local attractions or museums - educational but fun, and gives us indoor time during the hottest part of the day\n\n3. Nature walks or easy hiking - early morning or evening to avoid midday heat\n\nHard constraints:\n- Total daily budget of $200 for activities for our family\n- Need at least one rest day with minimal scheduled activities\n- No activities requiring advanced reservations more than 2 weeks ahead\n\nWould you like me to share more specific ideas based on a particular destination you have in mind?"
+        }
+      }
+    },
+    {
+      "agent_id": "agent-teen",
+      "response": {
+        "conversation_id": "d211ea3c-36d0-48fc-aec8-62a027172a25",
+        "round_id": "f2b5f082-fca2-451c-a05e-9d2c7e536c7d",
+        "status": "completed",
+        "steps": [
+          {
+            "type": "reasoning",
+            "reasoning": "I need to check if there's any existing information about trip preferences or constraints that might be relevant to the user's query."
+          },
+          {
+            "type": "tool_call",
+            "tool_id": "platform.core.search",
+            "params": {
+              "query": "teen preferences for travel activities nightlife adventure late starts July trip constraints"
+            },
+            "tool_call_id": "tooluse_qI4OoH0ee8ywuw0rKih1jl",
+            "progression": [
+              {
+                "message": "Identifying the most relevant data source"
+              }
+            ],
+            "results": [
+              {
+                "type": "error",
+                "data": {
+                  "message": "Could not figure out which index to use"
+                },
+                "tool_result_id": "Jf476W"
+              }
+            ]
+          }
+        ],
+        "started_at": "2026-02-06T23:13:14.344Z",
+        "time_to_first_token": 6493,
+        "time_to_last_token": 9459,
+        "model_usage": {
+          "connector_id": "Anthropic-Claude-Sonnet-3-7",
+          "llm_calls": 3,
+          "input_tokens": 8324,
+          "output_tokens": 338,
+          "model": "rainbow-sprinkles"
+        },
+        "response": {
+          "message": "Hey! For my 5-day July trip, here are my top preferences:\n\n1. Nightlife experiences - I'm definitely looking for places with good evening vibes, music venues, and places that stay open late.\n\n2. Adventure activities - I'm all about adrenaline rushes! Things like zip-lining, water sports, hiking to cool spots, or anything that gets my heart racing.\n\n3. Flexible morning schedule - I really need a vacation where I can sleep in. No activities that require me to be up before 10 AM, please!\n\nHard constraints:\n- Absolutely no early morning departures or activities\n- Need decent WiFi access for posting and staying connected\n- Would prefer not to spend all day on educational tours or museums\n\nI'm looking for a trip that's fun and gives me some freedom. What kind of destinations did you have in mind?"
+        }
+      }
+    },
+    {
+      "agent_id": "agent-child",
+      "response": {
+        "conversation_id": "356c112e-6e5a-4cf2-80de-29ed30d4db20",
+        "round_id": "32394960-1d16-4a06-8cab-b7618bfa3b5f",
+        "status": "completed",
+        "steps": [
+          {
+            "type": "reasoning",
+            "reasoning": "I need to search for information about activity preferences and constraints for a July trip to properly respond to the user's query."
+          },
+          {
+            "type": "tool_call",
+            "tool_id": "platform.core.search",
+            "params": {
+              "query": "activity preferences for children and water activities for summer trips"
+            },
+            "tool_call_id": "tooluse_F5vl8oK6NTOBojKnIwcyC0",
+            "progression": [
+              {
+                "message": "Identifying the most relevant data source"
+              }
+            ],
+            "results": [
+              {
+                "type": "error",
+                "data": {
+                  "message": "Could not figure out which index to use"
+                },
+                "tool_result_id": "HZvrqR"
+              }
+            ]
+          }
+        ],
+        "started_at": "2026-02-06T23:13:24.268Z",
+        "time_to_first_token": 6049,
+        "time_to_last_token": 7903,
+        "model_usage": {
+          "connector_id": "Anthropic-Claude-Sonnet-3-7",
+          "llm_calls": 3,
+          "input_tokens": 8292,
+          "output_tokens": 270,
+          "model": "rainbow-sprinkles"
+        },
+        "response": {
+          "message": "I love swimming in the ocean! That's my number one favorite thing to do in July. I could splash and play in the waves all day long!\n\nMy second favorite is going to the aquarium to see all the colorful fish and maybe even touch a starfish.\n\nThird would be having a picnic at the park where I can feed the ducks and play on the playground.\n\nI don't like being out in the really hot sun for too long, and I need to be back for my nap by 2 o'clock every day. Also, I'm scared of really big roller coasters."
+        }
+      }
+    },
+    {
+      "agent_id": "agent-grandparent",
+      "response": {
+        "conversation_id": "5ad963ce-db4c-4971-aab8-ce8df0f22c22",
+        "round_id": "1ea5aa05-9c85-400b-89f9-14a7d9af37d6",
+        "status": "completed",
+        "steps": [
+          {
+            "type": "reasoning",
+            "reasoning": "I need to check if there are any existing attachments that might contain information about activity preferences or trip constraints."
+          },
+          {
+            "type": "tool_call",
+            "tool_id": "platform.core.attachment_list",
+            "params": {},
+            "tool_call_id": "tooluse_gu7RGG2KmrneqeMgHGg6Oh",
+            "progression": [],
+            "results": [
+              {
+                "tool_result_id": "oA2Vnu",
+                "type": "other",
+                "data": {
+                  "count": 0,
+                  "attachments": []
+                }
+              }
+            ]
+          }
+        ],
+        "started_at": "2026-02-06T23:13:34.270Z",
+        "time_to_first_token": 5055,
+        "time_to_last_token": 6853,
+        "model_usage": {
+          "connector_id": "Anthropic-Claude-Sonnet-3-7",
+          "llm_calls": 3,
+          "input_tokens": 8237,
+          "output_tokens": 250,
+          "model": "rainbow-sprinkles"
+        },
+        "response": {
+          "message": "For our 5-day July trip, here are my preferences:\n\n1. Morning walks in quiet parks or nature trails with benches along the way\n2. Visits to museums or historical sites that don't require extensive standing\n3. Evening concerts or performances where seating is provided\n\nHard constraints:\n- Need accommodations with elevator access or ground floor options\n- Daily walking distance limited to 1-2 miles at a gentle pace\n- Require regular rest breaks and access to restrooms\n- Would prefer to avoid crowded tourist attractions with long lines\n\nI'd be happy to hear what options you're considering for our trip!"
+        }
+      }
+    }
+  ],
+  "orchestrator_prompt": "You are the family orchestrator. Using the member responses below, draft a 5-day trip plan with a destination, constraints, and a 2-day itinerary stub.\n\nagent-parent: {\"conversation_id\": \"f921a525-0b3d-48b6-ba89-280ce3b54696\", \"round_id\": \"476986fe-0006-4b4d-951b-cb5465b30161\", \"status\": \"completed\", \"steps\": [{\"type\": \"reasoning\", \"reasoning\": \"I need to search for information about activity preferences and constraints for a family trip in July. This will help me understand what options are available and what the parent's preferences might be.\"}, {\"type\": \"tool_call\", \"tool_id\": \"platform.core.search\", \"params\": {\"query\": \"family vacation activities July preferences budget constraints\"}, \"tool_call_id\": \"tooluse_J5rnDHe2piqO3OBn9GYsdU\", \"progression\": [{\"message\": \"Identifying the most relevant data source\"}], \"results\": [{\"type\": \"error\", \"data\": {\"message\": \"Could not figure out which index to use\"}, \"tool_result_id\": \"501Xgd\"}]}], \"started_at\": \"2026-02-06T23:12:59.928Z\", \"time_to_first_token\": 6151, \"time_to_last_token\": 8599, \"model_usage\": {\"connector_id\": \"Anthropic-Claude-Sonnet-3-7\", \"llm_calls\": 3, \"input_tokens\": 8329, \"output_tokens\": 317, \"model\": \"rainbow-sprinkles\"}, \"response\": {\"message\": \"For our 5-day July trip, here are my top activity preferences:\\n\\n1. Beach or water activities - swimming, building sandcastles, or a boat tour (preferably in the morning when it's not too hot)\\n\\n2. One or two local attractions or museums - educational but fun, and gives us indoor time during the hottest part of the day\\n\\n3. Nature walks or easy hiking - early morning or evening to avoid midday heat\\n\\nHard constraints:\\n- Total daily budget of $200 for activities for our family\\n- Need at least one rest day with minimal scheduled activities\\n- No activities requiring advanced reservations more than 2 weeks ahead\\n\\nWould you like me to share more specific ideas based on a particular destination you have in mind?\"}}\nagent-teen: {\"conversation_id\": \"d211ea3c-36d0-48fc-aec8-62a027172a25\", \"round_id\": \"f2b5f082-fca2-451c-a05e-9d2c7e536c7d\", \"status\": \"completed\", \"steps\": [{\"type\": \"reasoning\", \"reasoning\": \"I need to check if there's any existing information about trip preferences or constraints that might be relevant to the user's query.\"}, {\"type\": \"tool_call\", \"tool_id\": \"platform.core.search\", \"params\": {\"query\": \"teen preferences for travel activities nightlife adventure late starts July trip constraints\"}, \"tool_call_id\": \"tooluse_qI4OoH0ee8ywuw0rKih1jl\", \"progression\": [{\"message\": \"Identifying the most relevant data source\"}], \"results\": [{\"type\": \"error\", \"data\": {\"message\": \"Could not figure out which index to use\"}, \"tool_result_id\": \"Jf476W\"}]}], \"started_at\": \"2026-02-06T23:13:14.344Z\", \"time_to_first_token\": 6493, \"time_to_last_token\": 9459, \"model_usage\": {\"connector_id\": \"Anthropic-Claude-Sonnet-3-7\", \"llm_calls\": 3, \"input_tokens\": 8324, \"output_tokens\": 338, \"model\": \"rainbow-sprinkles\"}, \"response\": {\"message\": \"Hey! For my 5-day July trip, here are my top preferences:\\n\\n1. Nightlife experiences - I'm definitely looking for places with good evening vibes, music venues, and places that stay open late.\\n\\n2. Adventure activities - I'm all about adrenaline rushes! Things like zip-lining, water sports, hiking to cool spots, or anything that gets my heart racing.\\n\\n3. Flexible morning schedule - I really need a vacation where I can sleep in. No activities that require me to be up before 10 AM, please!\\n\\nHard constraints:\\n- Absolutely no early morning departures or activities\\n- Need decent WiFi access for posting and staying connected\\n- Would prefer not to spend all day on educational tours or museums\\n\\nI'm looking for a trip that's fun and gives me some freedom. What kind of destinations did you have in mind?\"}}\nagent-child: {\"conversation_id\": \"356c112e-6e5a-4cf2-80de-29ed30d4db20\", \"round_id\": \"32394960-1d16-4a06-8cab-b7618bfa3b5f\", \"status\": \"completed\", \"steps\": [{\"type\": \"reasoning\", \"reasoning\": \"I need to search for information about activity preferences and constraints for a July trip to properly respond to the user's query.\"}, {\"type\": \"tool_call\", \"tool_id\": \"platform.core.search\", \"params\": {\"query\": \"activity preferences for children and water activities for summer trips\"}, \"tool_call_id\": \"tooluse_F5vl8oK6NTOBojKnIwcyC0\", \"progression\": [{\"message\": \"Identifying the most relevant data source\"}], \"results\": [{\"type\": \"error\", \"data\": {\"message\": \"Could not figure out which index to use\"}, \"tool_result_id\": \"HZvrqR\"}]}], \"started_at\": \"2026-02-06T23:13:24.268Z\", \"time_to_first_token\": 6049, \"time_to_last_token\": 7903, \"model_usage\": {\"connector_id\": \"Anthropic-Claude-Sonnet-3-7\", \"llm_calls\": 3, \"input_tokens\": 8292, \"output_tokens\": 270, \"model\": \"rainbow-sprinkles\"}, \"response\": {\"message\": \"I love swimming in the ocean! That's my number one favorite thing to do in July. I could splash and play in the waves all day long!\\n\\nMy second favorite is going to the aquarium to see all the colorful fish and maybe even touch a starfish.\\n\\nThird would be having a picnic at the park where I can feed the ducks and play on the playground.\\n\\nI don't like being out in the really hot sun for too long, and I need to be back for my nap by 2 o'clock every day. Also, I'm scared of really big roller coasters.\"}}\nagent-grandparent: {\"conversation_id\": \"5ad963ce-db4c-4971-aab8-ce8df0f22c22\", \"round_id\": \"1ea5aa05-9c85-400b-89f9-14a7d9af37d6\", \"status\": \"completed\", \"steps\": [{\"type\": \"reasoning\", \"reasoning\": \"I need to check if there are any existing attachments that might contain information about activity preferences or trip constraints.\"}, {\"type\": \"tool_call\", \"tool_id\": \"platform.core.attachment_list\", \"params\": {}, \"tool_call_id\": \"tooluse_gu7RGG2KmrneqeMgHGg6Oh\", \"progression\": [], \"results\": [{\"tool_result_id\": \"oA2Vnu\", \"type\": \"other\", \"data\": {\"count\": 0, \"attachments\": []}}]}], \"started_at\": \"2026-02-06T23:13:34.270Z\", \"time_to_first_token\": 5055, \"time_to_last_token\": 6853, \"model_usage\": {\"connector_id\": \"Anthropic-Claude-Sonnet-3-7\", \"llm_calls\": 3, \"input_tokens\": 8237, \"output_tokens\": 250, \"model\": \"rainbow-sprinkles\"}, \"response\": {\"message\": \"For our 5-day July trip, here are my preferences:\\n\\n1. Morning walks in quiet parks or nature trails with benches along the way\\n2. Visits to museums or historical sites that don't require extensive standing\\n3. Evening concerts or performances where seating is provided\\n\\nHard constraints:\\n- Need accommodations with elevator access or ground floor options\\n- Daily walking distance limited to 1-2 miles at a gentle pace\\n- Require regular rest breaks and access to restrooms\\n- Would prefer to avoid crowded tourist attractions with long lines\\n\\nI'd be happy to hear what options you're considering for our trip!\"}}",
+  "orchestrator_response": {
+    "conversation_id": "87771783-5ab1-4431-b406-4352d4ab5a81",
+    "round_id": "7fcee8d2-f258-47c1-8c63-e628254fe8c4",
+    "status": "completed",
+    "steps": [
+      {
+        "type": "reasoning",
+        "reasoning": "I need to create an attachment to store the family members' preferences and constraints for the trip planning. This will help me organize the information before creating a comprehensive trip plan."
+      },
+      {
+        "type": "tool_call",
+        "tool_id": "platform.core.attachment_add",
+        "params": {
+          "type": "json",
+          "description": "Family Trip Preferences and Constraints",
+          "data": {
+            "family_members": {
+              "parent": {
+                "activity_preferences": [
+                  "Beach or water activities (morning)",
+                  "Local attractions or museums",
+                  "Nature walks or easy hiking (early morning/evening)"
+                ],
+                "constraints": [
+                  "Total daily budget of $200 for activities",
+                  "Need at least one rest day",
+                  "No activities requiring advanced reservations more than 2 weeks ahead"
+                ]
+              },
+              "teen": {
+                "activity_preferences": [
+                  "Nightlife experiences",
+                  "Adventure activities (zip-lining, water sports, hiking)",
+                  "Flexible morning schedule"
+                ],
+                "constraints": [
+                  "No activities before 10 AM",
+                  "Need decent WiFi access",
+                  "Prefer not to spend all day on educational tours/museums"
+                ]
+              },
+              "child": {
+                "activity_preferences": [
+                  "Swimming in the ocean",
+                  "Visiting aquarium",
+                  "Picnic at the park with playground"
+                ],
+                "constraints": [
+                  "Avoid extended time in hot sun",
+                  "Nap time by 2 PM",
+                  "Scared of big roller coasters"
+                ]
+              },
+              "grandparent": {
+                "activity_preferences": [
+                  "Morning walks in quiet parks/nature trails",
+                  "Museums or historical sites",
+                  "Evening concerts or performances with seating"
+                ],
+                "constraints": [
+                  "Need accommodations with elevator/ground floor",
+                  "Limited walking (1-2 miles at gentle pace)",
+                  "Regular rest breaks and restroom access",
+                  "Avoid crowded tourist attractions with long lines"
+                ]
+              }
+            }
+          }
+        },
+        "tool_call_id": "tooluse_nLyW3KiFe3oEgnS6RXNsmk",
+        "progression": [],
+        "results": [
+          {
+            "tool_result_id": "hQVAjv",
+            "type": "error",
+            "data": {
+              "message": "Attachment type 'json' is read-only"
+            }
+          }
+        ]
+      },
+      {
+        "type": "reasoning",
+        "reasoning": "I need to create an attachment to store the family members' preferences and constraints for the trip planning. Since 'json' type is read-only, I'll use 'text' type instead."
+      },
+      {
+        "type": "tool_call",
+        "tool_id": "platform.core.attachment_add",
+        "params": {
+          "data": "Family Trip Preferences and Constraints\n\nCHILD:\nActivity Preferences:\n1. Swimming in the ocean\n2. Visiting aquarium\n3. Picnic at the park with playground\nConstraints:\n- Avoid extended time in hot sun\n- Nap time by 2 PM\n- Scared of big roller coasters\n\nTEEN:\nActivity Preferences:\n1. Nightlife experiences (music venues, places open late)\n2. Adventure activities (zip-lining, water sports, hiking)\n3. Flexible morning schedule\nConstraints:\n- No activities before 10 AM\n- Need decent WiFi access\n- Prefer not to spend all day on educational tours/museums\n\nPARENT:\nActivity Preferences:\n1. Beach or water activities (preferably morning)\n2. Local attractions or museums\n3. Nature walks or easy hiking (early morning/evening)\nConstraints:\n- Total daily budget of $200 for activities\n- Need at least one rest day\n- No activities requiring advanced reservations more than 2 weeks ahead\n\nGRANDPARENT:\nActivity Preferences:\n1. Morning walks in quiet parks/nature trails with benches\n2. Museums or historical sites without extensive standing\n3. Evening concerts or performances with seating\nConstraints:\n- Need accommodations with elevator/ground floor\n- Limited walking (1-2 miles at gentle pace)\n- Regular rest breaks and restroom access\n- Avoid crowded tourist attractions with long lines",
+          "description": "Family Trip Preferences and Constraints",
+          "type": "text"
+        },
+        "tool_call_id": "tooluse_BpeDTzItjsBVwwzgyM7hCv",
+        "progression": [],
+        "results": [
+          {
+            "tool_result_id": "1jLryj",
+            "type": "error",
+            "data": {
+              "message": "Attachment type 'text' is read-only"
+            }
+          }
+        ]
+      },
+      {
+        "type": "reasoning",
+        "reasoning": "I need to create an attachment to store the family members' preferences and constraints for the trip planning. Since both 'json' and 'text' types are read-only, I'll try using 'code' type."
+      },
+      {
+        "type": "tool_call",
+        "tool_id": "platform.core.attachment_add",
+        "params": {
+          "data": "// Family Trip Preferences and Constraints\n\n// CHILD\nconst child = {\n  activityPreferences: [\n    \"Swimming in the ocean\",\n    \"Visiting aquarium\",\n    \"Picnic at the park with playground\"\n  ],\n  constraints: [\n    \"Avoid extended time in hot sun\",\n    \"Nap time by 2 PM\",\n    \"Scared of big roller coasters\"\n  ]\n};\n\n// TEEN\nconst teen = {\n  activityPreferences: [\n    \"Nightlife experiences (music venues, places open late)\",\n    \"Adventure activities (zip-lining, water sports, hiking)\",\n    \"Flexible morning schedule\"\n  ],\n  constraints: [\n    \"No activities before 10 AM\",\n    \"Need decent WiFi access\",\n    \"Prefer not to spend all day on educational tours/museums\"\n  ]\n};\n\n// PARENT\nconst parent = {\n  activityPreferences: [\n    \"Beach or water activities (preferably morning)\",\n    \"Local attractions or museums\",\n    \"Nature walks or easy hiking (early morning/evening)\"\n  ],\n  constraints: [\n    \"Total daily budget of $200 for activities\",\n    \"Need at least one rest day\",\n    \"No activities requiring advanced reservations more than 2 weeks ahead\"\n  ]\n};\n\n// GRANDPARENT\nconst grandparent = {\n  activityPreferences: [\n    \"Morning walks in quiet parks/nature trails with benches\",\n    \"Museums or historical sites without extensive standing\",\n    \"Evening concerts or performances with seating\"\n  ],\n  constraints: [\n    \"Need accommodations with elevator/ground floor\",\n    \"Limited walking (1-2 miles at gentle pace)\",\n    \"Regular rest breaks and restroom access\",\n    \"Avoid crowded tourist attractions with long lines\"\n  ]\n};",
+          "description": "Family Trip Preferences and Constraints",
+          "type": "code"
+        },
+        "tool_call_id": "tooluse_3736UU3CsA7dG4qu9CevHl",
+        "progression": [],
+        "results": [
+          {
+            "tool_result_id": "CvEP3c",
+            "type": "error",
+            "data": {
+              "message": "Attachment type 'code' is read-only"
+            }
+          }
+        ]
+      }
+    ],
+    "started_at": "2026-02-06T23:13:44.277Z",
+    "time_to_first_token": 27255,
+    "time_to_last_token": 36411,
+    "model_usage": {
+      "connector_id": "Anthropic-Claude-Sonnet-3-7",
+      "llm_calls": 5,
+      "input_tokens": 31895,
+      "output_tokens": 2266,
+      "model": "rainbow-sprinkles"
+    },
+    "response": {
+      "message": "# Family Trip Plan: Coastal California Adventure\n\n## Destination: Santa Barbara, California\n*A perfect blend of beaches, culture, and nature with activities for all ages and mobility levels*\n\n## Trip Duration: 5 Days (July 15-19, 2026)\n\n## Key Accommodations Features:\n- Beachfront hotel with ground floor/elevator access\n- Walking distance to main attractions\n- Pool for afternoon activities\n- Reliable WiFi throughout\n- Quiet rooms for afternoon naps\n\n## Family Constraints Addressed:\n- Daily activity budget: Under $200 total\n- No early morning requirements for teen (activities start 10AM or later)\n- Child's nap time accommodated (back by 2PM)\n- Grandparent's mobility needs considered (gentle pace, regular breaks)\n- No advance reservations needed beyond 2-week window\n- Day 3 designated as rest day with minimal scheduled activities\n\n## Sample Itinerary:\n\n### Day 1: Beach & Aquarium Day\n- **Morning (10:00AM-12:30PM)**: Butterfly Beach visit\n  *Parent and child can enjoy morning water activities while teen sleeps in*\n- **Afternoon (1:00-4:00PM)**: \n  *Child nap at hotel while teen explores hotel amenities*\n  *Optional: Grandparent and parent visit nearby Botanic Garden (gentle paths, many benches)*\n- **Evening (5:00-8:00PM)**: Santa Barbara Museum of Natural History and Sea Center\n  *Interactive exhibits for child, interesting for teen, seating available for grandparent*\n\n### Day 2: Nature & Culture Day\n- **Morning (10:00AM-12:30PM)**: Shoreline Park walk\n  *Gentle coastal trail with benches, beautiful views, playground for child*\n- **Afternoon (1:00-4:00PM)**:\n  *Child nap at hotel*\n  *Teen option: Paddleboarding lesson*\n  *Parent/Grandparent option: Santa Barbara Historical Museum (small, uncrowded)*\n- **Evening (5:00-8:00PM)**: Stearns Wharf and Harbor area\n  *Dinner with ocean views, street performers, casual shopping*\n  *Teen can explore nearby areas with WiFi access*\n\n*Remaining days will follow similar patterns with varied activities*\n\nWould you like me to develop the full 5-day itinerary with more specific activities and timing?"
+    }
+  }
+}

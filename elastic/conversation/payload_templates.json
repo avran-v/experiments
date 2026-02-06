@@ -1,0 +1,34 @@
+{
+  "preference_event": {
+    "type": "preference_snapshot",
+    "required_fields": ["member_id", "family_id", "preferences"],
+    "example": {
+      "member_id": "mem_parent_01",
+      "family_id": "fam_001",
+      "preferences": [
+        { "preference_type": "budget", "value": "mid", "priority": 5 },
+        { "preference_type": "pace", "value": "balanced", "priority": 4 }
+      ],
+      "constraints": ["avoid_luxury"],
+      "source": "explicit",
+      "confidence": 0.9,
+      "last_updated": "2026-02-06"
+    }
+  },
+  "trip_plan_draft": {
+    "type": "trip_plan_draft",
+    "required_fields": ["trip_id", "family_id", "dates", "destination_candidates"],
+    "example": {
+      "trip_id": "trip_2026_07_sd",
+      "family_id": "fam_001",
+      "status": "draft",
+      "dates": { "start_date": "2026-07-20", "end_date": "2026-07-24" },
+      "destination_candidates": [
+        { "name": "San Diego, CA", "score": 0.82, "rationale": "Beach, zoo, water park." },
+        { "name": "Santa Cruz, CA", "score": 0.67, "rationale": "Shorter drive." }
+      ],
+      "constraints": ["accessible_only", "no_early_mornings"],
+      "budget_estimate": 3200.0
+    }
+  }
+}

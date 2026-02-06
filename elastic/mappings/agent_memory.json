@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "properties": {
+      "memory_id": { "type": "keyword" },
+      "agent_id": { "type": "keyword" },
+      "family_id": { "type": "keyword" },
+      "memory_type": { "type": "keyword" },
+      "summary": { "type": "text" },
+      "evidence_links": { "type": "keyword" },
+      "related_trip_id": { "type": "keyword" },
+      "created_at": { "type": "date" }
+    }
+  }
+}

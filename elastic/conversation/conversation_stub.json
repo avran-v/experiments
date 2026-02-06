@@ -1,0 +1,92 @@
+{
+  "scenario": "Family trip planning via orchestrator + member agents",
+  "family_id": "fam_001",
+  "trip_id": "trip_2026_07_sd",
+  "messages": [
+    {
+      "ts": "2026-02-06T10:00:00-08:00",
+      "from": "agent_orchestrator",
+      "to": "all_member_agents",
+      "type": "prompt",
+      "content": "Please share your top 3 activity preferences and any hard constraints for a 5-day July trip."
+    },
+    {
+      "ts": "2026-02-06T10:00:10-08:00",
+      "from": "agent_parent",
+      "to": "agent_orchestrator",
+      "type": "preference_snapshot",
+      "content": "Mid-range budget, balanced pace, beach + one hiking day.",
+      "payload": {
+        "member_id": "mem_parent_01",
+        "preferences": [
+          { "preference_type": "budget", "value": "mid", "priority": 5 },
+          { "preference_type": "pace", "value": "balanced", "priority": 4 },
+          { "preference_type": "activities", "value": "beach", "priority": 3 }
+        ],
+        "constraints": ["avoid_luxury"]
+      }
+    },
+    {
+      "ts": "2026-02-06T10:00:12-08:00",
+      "from": "agent_teen",
+      "to": "agent_orchestrator",
+      "type": "preference_snapshot",
+      "content": "Nightlife, adventure, no early mornings.",
+      "payload": {
+        "member_id": "mem_teen_01",
+        "preferences": [
+          { "preference_type": "activities", "value": "nightlife", "priority": 4 },
+          { "preference_type": "activities", "value": "adventure", "priority": 4 }
+        ],
+        "constraints": ["no_early_mornings"]
+      }
+    },
+    {
+      "ts": "2026-02-06T10:00:14-08:00",
+      "from": "agent_child",
+      "to": "agent_orchestrator",
+      "type": "preference_snapshot",
+      "content": "Animals and water park.",
+      "payload": {
+        "member_id": "mem_child_01",
+        "preferences": [
+          { "preference_type": "activities", "value": "animals", "priority": 5 },
+          { "preference_type": "activities", "value": "water_park", "priority": 5 }
+        ],
+        "constraints": []
+      }
+    },
+    {
+      "ts": "2026-02-06T10:00:16-08:00",
+      "from": "agent_grandparent",
+      "to": "agent_orchestrator",
+      "type": "preference_snapshot",
+      "content": "Accessible walking and quiet evenings.",
+      "payload": {
+        "member_id": "mem_grand_01",
+        "preferences": [
+          { "preference_type": "accessibility", "value": "short_walks", "priority": 5 },
+          { "preference_type": "pace", "value": "quiet_evenings", "priority": 4 }
+        ],
+        "constraints": ["accessible_only"]
+      }
+    },
+    {
+      "ts": "2026-02-06T10:01:00-08:00",
+      "from": "agent_orchestrator",
+      "to": "family",
+      "type": "trip_plan_draft",
+      "content": "Draft plan: San Diego, July 20-24. Beach + zoo + water park + accessible evening cruise.",
+      "payload": {
+        "trip_id": "trip_2026_07_sd",
+        "family_id": "fam_001",
+        "dates": { "start_date": "2026-07-20", "end_date": "2026-07-24" },
+        "destination_candidates": [
+          { "name": "San Diego, CA", "score": 0.82 },
+          { "name": "Santa Cruz, CA", "score": 0.67 }
+        ],
+        "constraints": ["accessible_only", "no_early_mornings"]
+      }
+    }
+  ]
+}

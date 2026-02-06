@@ -1,0 +1,17 @@
+{
+  "mappings": {
+    "properties": {
+      "preference_id": { "type": "keyword" },
+      "member_id": { "type": "keyword" },
+      "family_id": { "type": "keyword" },
+      "preference_type": { "type": "keyword" },
+      "value": { "type": "keyword" },
+      "value_text": { "type": "text" },
+      "priority": { "type": "integer" },
+      "source": { "type": "keyword" },
+      "confidence": { "type": "float" },
+      "constraints": { "type": "keyword" },
+      "last_updated": { "type": "date" }
+    }
+  }
+}

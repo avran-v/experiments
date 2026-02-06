@@ -1,0 +1,92 @@
+{
+  "family_profiles": [
+    {
+      "family_id": "fam_001",
+      "members": ["mem_parent_01", "mem_teen_01", "mem_child_01", "mem_grand_01"],
+      "household_metadata": {
+        "home_location": "San Jose, CA",
+        "typical_budget_range": "mid",
+        "school_calendar": "US-CA"
+      },
+      "tags": ["summer_travel", "beach"],
+      "created_at": "2026-02-01",
+      "updated_at": "2026-02-05"
+    }
+  ],
+  "member_profiles": [
+    {
+      "member_id": "mem_parent_01",
+      "family_id": "fam_001",
+      "role": "parent",
+      "age_bracket": "35-44",
+      "accessibility_needs": "none",
+      "communication_style": "concise",
+      "notes": "Prefers balanced days with a mix of activity and rest.",
+      "created_at": "2026-02-01",
+      "updated_at": "2026-02-05"
+    }
+  ],
+  "member_preferences": [
+    {
+      "preference_id": "pref_child_water",
+      "member_id": "mem_child_01",
+      "family_id": "fam_001",
+      "preference_type": "activities",
+      "value": "water_park",
+      "value_text": "Wants a water park day.",
+      "priority": 5,
+      "source": "explicit",
+      "confidence": 0.95,
+      "constraints": [],
+      "last_updated": "2026-02-05"
+    }
+  ],
+  "trip_plans": [
+    {
+      "trip_id": "trip_2026_07_sd",
+      "family_id": "fam_001",
+      "status": "draft",
+      "dates": { "start_date": "2026-07-20", "end_date": "2026-07-24" },
+      "destination_candidates": [
+        { "name": "San Diego, CA", "score": 0.82, "rationale": "Beach, zoo, water park." }
+      ],
+      "final_destination": "San Diego, CA",
+      "budget_estimate": 3200.0,
+      "constraints": ["accessible_only", "no_early_mornings"],
+      "created_at": "2026-02-05",
+      "updated_at": "2026-02-05"
+    }
+  ],
+  "trip_itineraries": [
+    {
+      "trip_id": "trip_2026_07_sd",
+      "day_number": 1,
+      "date": "2026-07-20",
+      "activities": [
+        {
+          "type": "activity",
+          "name": "Sunset harbor cruise",
+          "location": "San Diego Bay",
+          "time_window": "18:00-20:00",
+          "notes": "Low walking, great for grandparents.",
+          "estimated_cost": 160.0
+        }
+      ],
+      "notes": "Keep it light after travel.",
+      "created_at": "2026-02-05",
+      "updated_at": "2026-02-05"
+    }
+  ],
+  "agent_memory": [
+    {
+      "memory_id": "memlog_001",
+      "agent_id": "agent_orchestrator",
+      "family_id": "fam_001",
+      "memory_type": "decision",
+      "summary": "Selected San Diego for accessible attractions and balanced activities.",
+      "evidence_links": ["pref_parent_budget", "pref_child_animals", "pref_grand_access"],
+      "related_trip_id": "trip_2026_07_sd",
+      "created_at": "2026-02-05"
+    }
+  ]
+}

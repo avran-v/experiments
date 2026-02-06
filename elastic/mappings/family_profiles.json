@@ -1,0 +1,18 @@
+{
+  "mappings": {
+    "properties": {
+      "family_id": { "type": "keyword" },
+      "members": { "type": "keyword" },
+      "household_metadata": {
+        "properties": {
+          "home_location": { "type": "keyword" },
+          "typical_budget_range": { "type": "keyword" },
+          "school_calendar": { "type": "keyword" }
+        }
+      },
+      "tags": { "type": "keyword" },
+      "created_at": { "type": "date" },
+      "updated_at": { "type": "date" }
+    }
+  }
+}
