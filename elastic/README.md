@@ -8,6 +8,7 @@ This folder contains Elasticsearch mappings, sample data, and conversation stubs
 - `data/example_documents.json` readable examples
 - `queries/sample_queries.md` useful DSL snippets
 - `conversation/` conversation stub and payload templates
+- `agent_builder/` demo scripts for Elastic Agent Builder
 
 ## Load order (serverless)
 1. Create indices with the provided mappings
@@ -27,3 +28,8 @@ curl -X PUT "$ES_ENDPOINT/agent_memory" -H "Authorization: ApiKey $ES_API_KEY" -
 # Bulk load dataset
 curl -X POST "$ES_ENDPOINT/_bulk" -H "Authorization: ApiKey $ES_API_KEY" -H "Content-Type: application/x-ndjson" --data-binary @data/bulk_seed.ndjson
 ```
+
+## Agent Builder demos
+- `agent_builder/create_agents.py` + `agent_builder/converse_demo.py` (family trip demo)
+- `agent_builder/create_agents_car_broker.py` + `agent_builder/converse_demo_car_broker.py` (car broker orchestration + sourcing demo)
+- `agent_builder/converse_demo_reddit.py` (car sourcing demo using Reddit MCP tools)
